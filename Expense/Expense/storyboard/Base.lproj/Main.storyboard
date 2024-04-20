@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Expense" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,6 +28,9 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="totalBalanceButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnq-ci-cJ8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z71-tx-0OH">
                                 <rect key="frame" x="10" y="218" width="373" height="50"/>
@@ -37,6 +40,9 @@
                                 <color key="tintColor" systemColor="systemGray2Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Today's Expense"/>
+                                <connections>
+                                    <action selector="todayExpenseButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDz-2W-pbT"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G8K-U1-iyn">
                                 <rect key="frame" x="10" y="288" width="373" height="35"/>
@@ -53,6 +59,9 @@
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sendButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHr-Oy-ik2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-I8-kvn">
                                         <rect key="frame" x="191.66666666666663" y="0.0" width="181.33333333333337" height="35"/>
@@ -64,6 +73,9 @@
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
                                             <color key="baseBackgroundColor" systemColor="systemGray6Color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="requestButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uW8-if-PT1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -150,7 +162,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="36C-Fb-3Lf"/>
-                    <navigationItem key="navigationItem" id="BjS-px-qMi"/>
+                    <navigationItem key="navigationItem" title="User" id="BjS-px-qMi"/>
+                    <connections>
+                        <outlet property="recentTransictionTable" destination="pbG-hR-1aa" id="5NK-4n-xza"/>
+                        <outlet property="requestButton" destination="tsT-I8-kvn" id="59o-Ca-7zd"/>
+                        <outlet property="sendButton" destination="Ees-K3-k3q" id="5dH-Nr-ETI"/>
+                        <outlet property="todayExpenseButton" destination="z71-tx-0OH" id="s6X-ec-OMm"/>
+                        <outlet property="totalBalanceButton" destination="l8s-VD-imD" id="fov-S2-44w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
