@@ -16,8 +16,17 @@ class ExpenseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.circle.fill"), style: .plain, target: self, action: #selector(profileTapped))
+        let notificationButton = UIBarButtonItem(image: UIImage(systemName: "bell.fill"), style: .plain, target: self, action: #selector(notificationTaapped))
+        let moreButton = UIBarButtonItem(image: UIImage(systemName: "ellipsis"), style: .plain, target: self, action: #selector(moreTapped))
+        navigationItem.rightBarButtonItems = [moreButton, notificationButton]
+        navigationController?.navigationBar.tintColor = .white
     }
+    
+    @objc func profileTapped(){}
+    @objc func notificationTaapped(){}
+    @objc func moreTapped(){}
+    
     
     @IBAction func totalBalanceButtonClicked(_ sender: UIButton){}
     @IBAction func todayExpenseButtonClicked(_ sender: UIButton){}
