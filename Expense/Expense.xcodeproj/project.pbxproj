@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70096B972BE6348F0036E026 /* TwoLineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70096B962BE6348F0036E026 /* TwoLineButton.swift */; };
 		706D01012BD1551900EA031F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D01002BD1551900EA031F /* AppDelegate.swift */; };
 		706D01032BD1551900EA031F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D01022BD1551900EA031F /* SceneDelegate.swift */; };
 		706D01052BD1551900EA031F /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D01042BD1551900EA031F /* ExpenseViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70096B962BE6348F0036E026 /* TwoLineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineButton.swift; sourceTree = "<group>"; };
 		706D00FD2BD1551900EA031F /* Expense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		706D01002BD1551900EA031F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		706D01022BD1551900EA031F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70096B952BE634190036E026 /* customButtons */ = {
+			isa = PBXGroup;
+			children = (
+				70096B962BE6348F0036E026 /* TwoLineButton.swift */,
+			);
+			path = customButtons;
+			sourceTree = "<group>";
+		};
 		706D00F42BD1551900EA031F = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +80,7 @@
 		706D01142BD1552300EA031F /* views */ = {
 			isa = PBXGroup;
 			children = (
+				70096B952BE634190036E026 /* customButtons */,
 				706D01042BD1551900EA031F /* ExpenseViewController.swift */,
 				70EC77832BD3D8B100DC1A7D /* RecentTransictionsTableViewCell.swift */,
 			);
@@ -177,6 +188,7 @@
 				70EC77842BD3D8B100DC1A7D /* RecentTransictionsTableViewCell.swift in Sources */,
 				706D01012BD1551900EA031F /* AppDelegate.swift in Sources */,
 				706D01032BD1551900EA031F /* SceneDelegate.swift in Sources */,
+				70096B972BE6348F0036E026 /* TwoLineButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
